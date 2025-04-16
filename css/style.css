@@ -3,9 +3,19 @@
   padding: 0;
 }
 
+:root {
+  --main-color:#222;
+  --primary-color:#fff;
+}
+
+.light {
+  --main-color:#fff;
+  --primary-color:#222;
+}
+
 body {
-  background-color: #222;
-  color: #fff;
+  color: var(--primary-color);
+  background-color: var(--main-color);
   font-family: system-ui, "Segoe UI";
 }
 
@@ -17,6 +27,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 10px 0;
+  color: var(--primary-color);
 }
 .crud input {
   width: 100%;
@@ -69,6 +80,7 @@ body {
   width: 100%;
   text-align: center;
   margin: 10px 0;
+  color: var(--primary-color);
 }
 .crud table th {
   text-transform: uppercase;
@@ -84,4 +96,13 @@ body {
 .crud #deleteAll button {
   margin: 15px auto;
   background-color: rgb(226, 59, 47);
+}
+
+.status {
+  width: 30px;
+  float: right;
+  margin-top: -35px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

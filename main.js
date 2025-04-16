@@ -10,6 +10,7 @@ let count = document.getElementById("count");
 let submit = document.getElementById("submit");
 let totals = document.querySelectorAll(".total");
 let tbody = document.querySelector(".insertion");
+let statusSettingIcon=document.querySelector(".status")
 let inputs = [title, price, taxes, ads, discount, count, category];
 
 let mood = "create";
@@ -217,3 +218,13 @@ function searchData(value){
     tbody.innerHTML=table
 }
 //clean data
+
+statusSettingIcon.onclick=function(){
+document.body.classList.toggle("light");
+if(document.body.classList.contains("light"))
+{
+    statusSettingIcon.src="img/moon.png"
+}else{
+    statusSettingIcon.src="img/sun.png"
+}
+}
