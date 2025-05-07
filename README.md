@@ -1,5 +1,5 @@
 **CRUD Project**
-#make this project using
+# make this project using
 - html
 - scss
 - vanilla JS
